@@ -234,6 +234,11 @@ document.querySelectorAll('.section-title, .section-sub').forEach(el => {
   revealObserver.observe(el);
 });
 
+/* -------------------- 7b. photo reveal -------------------- */
+document.querySelectorAll('.polaroid').forEach(el => {
+  revealObserver.observe(el);
+});
+
 /* -------------------- 8. gift + letter -------------------- */
 (function gift(){
   const box = document.getElementById('gift');
