@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Tahmina 🌙</title>
+<meta name="description" content="An interactive birthday celebration made for Tahmina">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar"></div>
+<canvas id="starfield"></canvas>
+<div class="moon"></div>
+
+<!-- ============ HERO ============ -->
+<section class="section hero" id="hero">
+  <p class="eyebrow">a little universe, built for one person</p>
+  <h1 class="hero-title">
+    <span class="line">Happy Birthday</span>
+    <span class="script" id="typedName"></span>
+  </h1>
+  <p class="hero-sub">scroll down &mdash; there's a whole night sky waiting for you</p>
+  <div class="scroll-cue"><span></span></div>
+</section>
+
+<!-- ============ CONSTELLATION ============ -->
+<section class="section constellation-section" id="constellation-section">
+  <p class="eyebrow">01 &nbsp;·&nbsp; her name, in stars</p>
+  <h2 class="section-title">Written in the sky</h2>
+  <svg id="constellation" viewBox="0 0 500 160" aria-label="Tap each star in order to spell her name">
+    <g id="links"></g>
+    <g id="nodes"></g>
+  </svg>
+  <p class="hint" id="hint">tap each star, in order</p>
+</section>
+
+<!-- ============ BALLOONS ============ -->
+<section class="section balloons-section" id="balloons-section">
+  <p class="eyebrow">02 &nbsp;·&nbsp; pop a little joy</p>
+  <h2 class="section-title">Eight small wishes</h2>
+  <p class="section-sub"><span id="poppedCount">0</span> / <span id="totalBalloons">8</span> popped</p>
+  <div class="balloon-field" id="balloonField"></div>
+</section>
+
+<!-- ============ CAKE / CANDLE ============ -->
+<section class="section cake-section" id="cake-section">
+  <p class="eyebrow">03 &nbsp;·&nbsp; make it official</p>
+  <h2 class="section-title">Make a wish</h2>
+  <div class="cake">
+    <div class="candle-wrap">
+      <div class="wick"></div>
+      <div class="flame" id="flame"></div>
+      <div class="smoke" id="smoke"></div>
+      <div class="candle"></div>
+    </div>
+    <div class="cake-body">
+      <div class="cake-top"></div>
+      <div class="cake-mid"></div>
+      <div class="cake-drip"></div>
+    </div>
+  </div>
+  <button id="wishBtn">blow out the candle</button>
+</section>
+
+<!-- ============ REASONS ============ -->
+<section class="section reasons-section" id="reasons-section">
+  <p class="eyebrow">04 &nbsp;·&nbsp; a few, out of many</p>
+  <h2 class="section-title">Reasons, unfolding</h2>
+  <div class="reasons-grid" id="reasonsGrid"></div>
+</section>
+
+<!-- ============ GIFT / LETTER ============ -->
+<section class="section gift-section" id="gift-section">
+  <p class="eyebrow">05 &nbsp;·&nbsp; open when ready</p>
+  <h2 class="section-title">One more thing</h2>
+  <div class="gift" id="gift">
+    <div class="gift-lid"></div>
+    <div class="gift-box"></div>
+    <div class="gift-ribbon-v"></div>
+    <div class="gift-ribbon-h"></div>
+    <div class="gift-bow"></div>
+  </div>
+  <p class="hint" id="giftHint">tap the box</p>
+  <div class="letter" id="letter">
+    <p id="letterText"></p>
+    <p class="sign">Happiest birthday, my Tahmina. I love you.</p>
+  </div>
+</section>
+
+<!-- ============ FINALE ============ -->
+<section class="section finale-section" id="finale-section">
+  <p class="eyebrow">06 &nbsp;·&nbsp; the grand finish</p>
+  <h2 class="section-title">Light up the sky</h2>
+  <canvas id="fireworks"></canvas>
+  <button id="fireworksBtn">light it up</button>
+  <footer>
+    <p>made with love, for Tahmina alone</p>
+  </footer>
+</section>
+
+<script src="js/main.js"></script>
+</body>
+</html>
